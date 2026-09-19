@@ -15,9 +15,9 @@ proxies:
   servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
