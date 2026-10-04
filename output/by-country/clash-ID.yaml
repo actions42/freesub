@@ -11,17 +11,31 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8C5valhOd8vfwaTXUSZ6Zyb0Ip34lRR5z7P8az
   udp: true
+- name: 🇮🇩 ID 02 - xiaohe
+  type: vless
+  server: sub.skyshopnet.ir
+  port: 443
+  uuid: b1a9f9b0-369f-41c1-bd52-300a62267b75
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hpqn8r_F_YEnWuzRgNtRM5uHgUkrIzx99VEwzJH-PTI
+  servername: www.sony.ch
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇩 ID 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - xiaohe
+  - 🇮🇩 ID 02 - xiaohe
 rules:
 - MATCH,PROXIES
