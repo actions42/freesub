@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: gadfather.zovip2.ir
-  port: 443
-  uuid: 9f9b66ba-e964-4e0e-be38-293134868a67
+  server: 172.66.132.196
+  port: 8880
+  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: gadfather.zovip2.ir
   network: ws
   ws-opts:
-    path: /gropcdn?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: gadfather.zovip2.ir
+      Host: dark-dew-c3ed.48-97c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
